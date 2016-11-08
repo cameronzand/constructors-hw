@@ -1,7 +1,8 @@
 function Dog (options) {
-	options === options || {};
+	options = options || {};
 	this.color = options.color;
 	this.status = "normal";
+	this.owner = options.owner;
 
 	if (options.hungry !== undefined) {
 		this.hungry = options.hungry;

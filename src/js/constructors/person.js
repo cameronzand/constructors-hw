@@ -1,5 +1,6 @@
 function Person (options) {
 	options = options || {};
+	this.cool = options.cool || false;
 
 
 };
@@ -13,4 +14,3 @@ Person.prototype.feed = function(dog) {
 }
 
 export { Person };
-t
